@@ -1,3 +1,9 @@
+#### 0.0.3.0 (2026-08-01)
+
+##### Chores
+
+*  Create workflow ([ffaeb10c](https://github.com/juleskreutzer/ispf-renderer-html/commit/ffaeb10c54498e4b3ba99d58933e4e02275b43d0))
+
 #### 0.0.1 (2026-08-01)
 
 ##### New Features
