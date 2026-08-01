@@ -2,11 +2,11 @@
 <head>
     <link rel="stylesheet" href="../styles/default.css" />
 </head>
-<body>
-<span>/-/ Performance Monitor /-/                                                    </span> <br>
-<span>Option ===></span> <span>ZCMD/ /</span> <input class="ispf-input" maxLength="26" id="datum" value="undefined" /> <span>                                </span> <br>
+<body class="ispf-panel">
+<span class="ispf-intensified">/-/ Performance Monitor /-/                                                    </span> <br>
+<span>Option ===></span> <span>ZCMD/ /</span> <input class="ispf-input ispf-required" maxLength="26" id="datum" value="undefined" /> <span>                                </span> <br>
 <span>                                                                               </span> <br>
-<span> Select options below to run Performance Monitor reporting ad-hoc </span> <span>            </span> <br>
+<span class="ispf-text"> Select options below to run Performance Monitor reporting ad-hoc </span> <span>            </span> <br>
 <span>                                                                               </span> <br>
 <span>/-/ Environment selection /-/                                                  </span> <br>
 <span> Environment to be used: CV</span> <input class="ispf-input" maxLength="1" id="e" value="undefined" /> <span>                                                 </span> <br>
@@ -22,8 +22,9 @@
 <span>         Reporting type: </span> <input class="ispf-input" maxLength="2" id="ty" value="undefined" /> <span> * AM or IM</span> <span>                                      </span> <br>
 <span>         FTP to network: </span> <input class="ispf-input" maxLength="1" id="f" value="undefined" /> <span>                                                   </span> <br>
 <span>                                                                               </span> <br>
-<span> Create report from</span> <input class="ispf-input" maxLength="5" id="time3" value="undefined" /> <span> on</span> <input class="ispf-input" maxLength="8" id="rsdate" value="undefined" /> <span>Required</span> <span>                              </span> <br>
-<span>               thru</span> <input class="ispf-input" maxLength="5" id="time4" value="undefined" /> <span> on</span> <input class="ispf-input" maxLength="8" id="redate" value="undefined" /> <span> Optional</span> <span>                              </span> <br>
+<span> Create report from</span> <input class="ispf-input ispf-protected" maxLength="5" id="time3" value="undefined" /> <span> on</span> <input class="ispf-input" maxLength="8" id="rsdate" value="undefined" /> <span>Required</span> <span>                              </span> <br>
+<span>               thru</span> <input class="ispf-input ispf-hidden" maxLength="5" id="time4" value="undefined" /> <span> on</span> <input class="ispf-input" maxLength="8" id="redate" value="undefined" /> <span> Optional</span> <span>                              </span> <br>
 <span>                                                                               </span> <br>
-<span> Select desired reports before submitting job!                                 </span> <br>
+<span class="ispf-error"> Select desired reports before submitting job!                                 </span> <br>
+>
 </body>
