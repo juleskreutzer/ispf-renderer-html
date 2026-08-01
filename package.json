@@ -1,6 +1,6 @@
 {
   "name": "ispf-renderer-html",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "HTML renderer for ISPF panels using the ispf-core package",
   "keywords": [
     "ISPF",
