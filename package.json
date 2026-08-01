@@ -31,7 +31,12 @@
       "import": "./dist/index.mjs"
     }
   },
-  "files": [],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "styles"
+  ],
   "scripts": {
     "build": "tsdown --config-loader tsx --minify",
     "build:watch": "tsdown --watch --config-loader tsx",
