@@ -1,3 +1,9 @@
+#### 0.0.3 (2026-08-01)
+
+##### Tests
+
+*  Included test cases ([ef185b86](https://github.com/juleskreutzer/ispf-renderer-html/commit/ef185b86416024eea7905e99faf5f657af3d70d4))
+
 #### 0.0.3.0 (2026-08-01)
 
 ##### Chores
