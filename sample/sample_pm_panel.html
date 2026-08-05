@@ -2,29 +2,32 @@
 <head>
     <link rel="stylesheet" href="../styles/default.css" />
 </head>
-<body class="ispf-panel">
-<span class="ispf-intensified">/-/ Performance Monitor /-/                                                    </span> <br>
-<span>Option ===></span> <span>ZCMD/ /</span> <input class="ispf-input ispf-required" maxLength="26" id="datum" value="undefined" /> <span>                                </span> <br>
-<span>                                                                               </span> <br>
-<span class="ispf-text"> Select options below to run Performance Monitor reporting ad-hoc </span> <span>            </span> <br>
-<span>                                                                               </span> <br>
-<span>/-/ Environment selection /-/                                                  </span> <br>
-<span> Environment to be used: CV</span> <input class="ispf-input" maxLength="1" id="e" value="undefined" /> <span>                                                 </span> <br>
-<span>                                                                               </span> <br>
-<span>/-/ SMF DUMP & Extraction /-/                                                  </span> <br>
-<span>       Perform SMF DUMP:</span> <input class="ispf-input" maxLength="1" id="D" value="undefined" /> <span>                                                    </span> <br>
-<span>             Start date:</span> <input class="ispf-input" maxLength="7" id="adate" value="undefined" /> <span> Start time:</span> <input class="ispf-input" maxLength="5" id="time1" value="undefined" /> <span>                           </span> <br>
-<span>             End date  :</span> <input class="ispf-input" maxLength="7" id="edate" value="undefined" /> <span> End time  :</span> <input class="ispf-input" maxLength="5" id="time2" value="undefined" /> <span>                           </span> <br>
-<span> Perform SMF Extraction:</span> <input class="ispf-input" maxLength="1" id="x" value="undefined" /> <span>                                                    </span> <br>
-<span>                                                                               </span> <br>
-<span>/-/ PerfMon Report generation /-/                                              </span> <br>
-<span> Create PerfMon reports: </span> <input class="ispf-input" maxLength="1" id="r" value="undefined" /> <span>                                                   </span> <br>
-<span>         Reporting type: </span> <input class="ispf-input" maxLength="2" id="ty" value="undefined" /> <span> * AM or IM</span> <span>                                      </span> <br>
-<span>         FTP to network: </span> <input class="ispf-input" maxLength="1" id="f" value="undefined" /> <span>                                                   </span> <br>
-<span>                                                                               </span> <br>
-<span> Create report from</span> <input class="ispf-input ispf-protected" maxLength="5" id="time3" value="undefined" /> <span> on</span> <input class="ispf-input" maxLength="8" id="rsdate" value="undefined" /> <span>Required</span> <span>                              </span> <br>
-<span>               thru</span> <input class="ispf-input ispf-hidden" maxLength="5" id="time4" value="undefined" /> <span> on</span> <input class="ispf-input" maxLength="8" id="redate" value="undefined" /> <span> Optional</span> <span>                              </span> <br>
-<span>                                                                               </span> <br>
-<span class="ispf-error"> Select desired reports before submitting job!                                 </span> <br>
->
+<span class="ispf-text ispf-text-info">.text-info</span> <span class="ispf-text ispf-text-danger">.text-danger</span> <span class="ispf-text ispf-text-success">.text-success</span> <span class="ispf-text ispf-text-primary">.text-primary</span> <span class="ispf-text ispf-text-secondary">.text-secondary</span> <span class="ispf-text ispf-text-warning">.text-warning</span> <span class="ispf-text ispf-text-alert">.text-alert</span> <br>
+
+<div class="ispf-panel">
+<span class="ispf-text ispf-text-info ispf-intensified">/-/ Performance Monitor /-/                                                    </span> <br>
+<span class="ispf-text ispf-text-info ispf-intensified">Option ===></span> <span class="ispf-text ispf-text-danger ispf-intensified">ZCMD/ /</span> <input class="ispf-input" maxLength="26" size="26" id="datum" value="" /> <span class="ispf-text ispf-text-primary">                                </span> <br>
+<span class="ispf-text ispf-text-primary">                                                                               </span> <br>
+<span class="ispf-text ispf-text-primary"> Select options below to run Performance Monitor reporting ad-hoc </span> <span class="ispf-text ispf-text-primary">            </span> <br>
+<span class="ispf-text ispf-text-primary">                                                                               </span> <br>
+<span class="ispf-text ispf-text-info ispf-intensified">/-/ Environment selection /-/                                                  </span> <br>
+<span class="ispf-text ispf-text-primary"> Environment to be used: CV</span> <input class="ispf-input" maxLength="1" size="1" id="e" value="1" /> <span class="ispf-text ispf-text-primary">                                                 </span> <br>
+<span class="ispf-text ispf-text-primary">                                                                               </span> <br>
+<span class="ispf-text ispf-text-info ispf-intensified">/-/ SMF DUMP & Extraction /-/                                                  </span> <br>
+<span class="ispf-text ispf-text-primary">       Perform SMF DUMP:</span> <input class="ispf-input" maxLength="1" size="1" id="D" value="Y" /> <span class="ispf-text ispf-text-primary">                                                    </span> <br>
+<span class="ispf-text ispf-text-primary">             Start date:</span> <input class="ispf-input" maxLength="7" size="7" id="adate" value="" /> <span class="ispf-text ispf-text-primary"> Start time:</span> <input class="ispf-input" maxLength="5" size="5" id="time1" value="" /> <span class="ispf-text ispf-text-primary">                           </span> <br>
+<span class="ispf-text ispf-text-primary">             End date  :</span> <input class="ispf-input" maxLength="7" size="7" id="edate" value="" /> <span class="ispf-text ispf-text-primary"> End time  :</span> <input class="ispf-input" maxLength="5" size="5" id="time2" value="" /> <span class="ispf-text ispf-text-primary">                           </span> <br>
+<span class="ispf-text ispf-text-primary"> Perform SMF Extraction:</span> <input class="ispf-input" maxLength="1" size="1" id="x" value="" /> <span class="ispf-text ispf-text-primary">                                                    </span> <br>
+<span class="ispf-text ispf-text-primary">                                                                               </span> <br>
+<span class="ispf-text ispf-text-info ispf-intensified">/-/ PerfMon Report generation /-/                                              </span> <br>
+<span class="ispf-text ispf-text-primary"> Create PerfMon reports: </span> <input class="ispf-input" maxLength="1" size="1" id="r" value="" /> <span class="ispf-text ispf-text-primary">                                                   </span> <br>
+<span class="ispf-text ispf-text-primary">         Reporting type: </span> <input class="ispf-input" maxLength="2" size="2" id="ty" value="" /> <span class="ispf-text ispf-text-primary"> * AM or IM</span> <span class="ispf-text ispf-text-primary">                                      </span> <br>
+<span class="ispf-text ispf-text-primary">         FTP to network: </span> <input class="ispf-input" maxLength="1" size="1" id="f" value="" /> <span class="ispf-text ispf-text-primary">                                                   </span> <br>
+<span class="ispf-text ispf-text-primary">                                                                               </span> <br>
+<span class="ispf-text ispf-text-primary"> Create report from</span> <input class="ispf-input" maxLength="5" size="5" id="time3" value="" /> <span class="ispf-text ispf-text-primary"> on</span> <input class="ispf-input" maxLength="8" size="8" id="rsdate" value="" /> <span class="ispf-text ispf-text-success ispf-intensified">Required</span> <span class="ispf-text ispf-text-primary">                              </span> <br>
+<span class="ispf-text ispf-text-primary">               thru</span> <input class="ispf-input" maxLength="5" size="5" id="time4" value="" /> <span class="ispf-text ispf-text-primary"> on</span> <input class="ispf-input" maxLength="8" size="8" id="redate" value="" /> <span class="ispf-text ispf-text-primary"> Optional</span> <span class="ispf-text ispf-text-primary">                              </span> <br>
+<span class="ispf-text ispf-text-primary">                                                                               </span> <br>
+<span class="ispf-text ispf-text-primary"> Select desired reports before submitting job!                                 </span> <br>
+</div>
 </body>
+</html>

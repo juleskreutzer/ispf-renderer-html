@@ -11,7 +11,15 @@
 
     --ispf-font-family: Consolas, "Courier New", monospace;
     --ispf-font-size: 16px;
-    --ispf-line-height: 1.2;
+    --ispf-line-height: 1.0;
+
+    --ispf-text-color-white: #ffffff;
+    --ispf-text-color-red: #b60000;
+    --ispf-text-color-green: #00bb00;
+    --ispf-text-color-blue: #437ccf;
+    --ispf-text-color-pink: #b85cb8;
+    --ispf-text-color-yellow: #bfbf00;
+    --ispf-text-color-turquoise: #00bdbd;
 }
 
 html,
@@ -45,8 +53,35 @@ body {
    ========================================================================== */
 
 .ispf-text {
-    color: inherit;
     font: inherit;
+}
+
+.ispf-text-info {
+    color: var(--ispf-text-color-white);
+}
+
+.ispf-text-danger {
+    color: var(--ispf-text-color-red);
+}
+
+.ispf-text-primary {
+    color: var(--ispf-text-color-blue);
+}
+
+.ispf-text-success {
+    color: var(--ispf-text-color-green);
+}
+
+.ispf-text-secondary {
+    color: var(--ispf-text-color-pink);
+}
+
+.ispf-text-warning {
+    color: var(--ispf-text-color-yellow);
+}
+
+.ispf-text-alert {
+    color: var(--ispf-text-color-turquoise);
 }
 
 /* ==========================================================================
@@ -97,4 +132,8 @@ body {
 
 .ispf-intensified {
     font-weight: bold;
+}
+
+.ispf-caps {
+    text-transform: uppercase;
 }

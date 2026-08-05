@@ -1,6 +1,10 @@
 import { HtmlRenderer } from './dist/index.mjs';
 
-const file = 'C:\\Users\\jules\\Documents\\GIT\\ispf-core\\.company_test_files\\panel_definitions\\PM.txt'
+const file = 'C:\\Users\\Jules.Kreutzer\\GIT\\ispf-core\\test\\assets\\PM.txt'
 const source = HtmlRenderer.readSourceFile(file);
 const renderer = new HtmlRenderer(source);
-console.log(renderer.render());
+let variables = {
+    ["D"] : 'Y',
+    ["e"] : '1'
+};
+console.log(renderer.render(variables));
