@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import { TextRenderer } from "./renderers/text.renderer.ts";
 import { InputRenderer } from "./renderers/input.renderer.ts";
 import { HeaderRenderer } from "./renderers/header.renderer.ts";
+import { SelectRenderer } from "./renderers/select.renderer.ts";
 
 export class HtmlRenderer {
 
@@ -27,6 +28,7 @@ export class HtmlRenderer {
         const validatedPanel = new PanelValidator(parserResult).validate();
         console.log(validatedPanel);
         const layout = new PanelLayoutGenerator(validatedPanel).generate();
+        console.log(layout);
 
         if (layout.lines.length < 1) {
             throw new Error(`Panel body does not contain any valid lines`);
@@ -58,6 +60,9 @@ export class HtmlRenderer {
                     break;
                 case ElementType.INPUT:
                     oneline += `${new InputRenderer(element, definedVariables, resolveVariables).render()} `;
+                    break;
+                case ElementType.SELECTION:
+                    oneline += `${new SelectRenderer(element).render()} `;
                     break;
                 case ElementType.HEADER:
                     oneline += `${new HeaderRenderer(element).render()} `;
