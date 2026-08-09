@@ -101,6 +101,7 @@ body {
     margin: 0;
 
     box-sizing: border-box;
+    border-bottom: 1px solid var(--ispf-input-foreground);
 }
 
 /* Remove browser styling */
@@ -108,6 +109,10 @@ body {
 .ispf-input:focus {
     outline: none;
     box-shadow: none;
+}
+
+.ispf-input:user-invalid {
+    border-bottom: 1px solid var(--ispf-text-color-red);
 }
 
 /* ==========================================================================

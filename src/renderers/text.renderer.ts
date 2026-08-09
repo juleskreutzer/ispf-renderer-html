@@ -1,13 +1,13 @@
-import { ElementType, type ElementLayout, type TextElement } from "ispf-core";
+import { ElementType, type ElementLayout, type ITextElement } from "ispf-core";
 import { BaseRenderer } from "./base.renderer.ts";
 
 export class TextRenderer extends BaseRenderer {
-    private _e: TextElement;
+    private _e: ITextElement;
     constructor(element: ElementLayout) {
         super(element);
 
         if (element.type === ElementType.TEXT) {
-            this._e = element as TextElement;
+            this._e = element as ITextElement;
         } else {
             throw new Error(`Invalid element type '${element.type}' provided to TextRenderer`);
         }
