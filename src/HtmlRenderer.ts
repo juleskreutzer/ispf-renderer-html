@@ -34,12 +34,13 @@ export class HtmlRenderer {
             throw new Error(`Panel body does not contain any valid lines`);
         }
 
-        let result = '<div class="ispf-panel">\n'; // First element in DOM
+        let result = '<form class="ispf-panel">\n'; // First element in DOM
         for(const line of layout.lines) {
             result += `${this.handleLine(line, validatedPanel.body.variables, resolveVariables)}<br>\n`;
         }
 
-        result += '</div>'; // Close div element opened first
+        result += '<input type="submit" class="ispf-submit" value="Submit form" id="ispf-submit"/>\n'
+        result += '</form>'; // Close div element opened first
         return result;
     }
 
@@ -62,7 +63,7 @@ export class HtmlRenderer {
                     oneline += `${new InputRenderer(element, definedVariables, resolveVariables).render()} `;
                     break;
                 case ElementType.SELECTION:
-                    oneline += `${new SelectRenderer(element).render()} `;
+                    oneline += `${new SelectRenderer(element, definedVariables, resolveVariables).render()} `;
                     break;
                 case ElementType.HEADER:
                     oneline += `${new HeaderRenderer(element).render()} `;

@@ -116,6 +116,44 @@ body {
 }
 
 /* ==========================================================================
+   Select
+   ========================================================================== */
+
+.ispf-select {
+    background: var(--ispf-input-background);
+    color: var(--ispf-input-foreground);
+
+    font: inherit;
+    
+    border: none;
+    outline: none;
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--ispf-input-foreground);
+
+    appearance: none;
+    cursor: pointer;
+}
+
+.ispf-select:focus {
+    outline: 1px solid var(--ispf-text-color-turquoise);
+    box-shadow: none;
+}
+
+.ispf-select option {
+    background: var(--ispf-background);
+    color: var(--ispf-foreground);
+}
+
+.ispf-select option:checked {
+    background: var(ispf-text-color-blue);
+    color: var(--ispf-input-foreground);
+}
+
+/* ==========================================================================
    States
    ========================================================================== */
 
@@ -141,4 +179,12 @@ body {
 
 .ispf-caps {
     text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Misc
+   ========================================================================== */
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
 }
