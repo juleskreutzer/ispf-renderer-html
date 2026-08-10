@@ -7,5 +7,5 @@ test('TextRenderer renders span for text elements', () => {
     const element = { type: ElementType.TEXT, value: 'hello', length: 5 };
     const renderer = new TextRenderer(element as any);
     const out = renderer.render();
-    assert.equal(out, '<span>hello</span>');
+    assert.equal(out, '<span class="ispf-text ispf-text-info">hello</span>');
 });

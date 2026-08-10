@@ -21,14 +21,10 @@ export class HtmlRenderer {
      * @memberof HtmlRenderer
      */
     render(resolveVariables?: { [key: string]: string}): string {
-        console.log(`Resolved variables:`);
-        console.log(resolveVariables);
         const tokens = new PanelLexer().lex(this.source);
         const parserResult = new PanelParser(tokens).parse();
         const validatedPanel = new PanelValidator(parserResult).validate();
-        console.log(validatedPanel);
         const layout = new PanelLayoutGenerator(validatedPanel).generate();
-        console.log(layout);
 
         if (layout.lines.length < 1) {
             throw new Error(`Panel body does not contain any valid lines`);
