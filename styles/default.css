@@ -154,6 +154,38 @@ body {
 }
 
 /* ==========================================================================
+   Button
+   ========================================================================== */
+
+.ispf-button {
+    background: transparent;
+    color: var(--ispf-input-foreground);
+
+    font: inherit;
+
+    border: 1px solid var(--ispf-input-foreground);
+    outline: none;
+    padding: 2px 8px;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+    width: 80ch;
+}
+
+.ispf-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ispf-button:hover {
+    background: var(--ispf-input-foreground);
+    color: var(--ispf-background);
+    border-color: var(--ispf-input-foreground);
+}
+
+/* ==========================================================================
    States
    ========================================================================== */
 

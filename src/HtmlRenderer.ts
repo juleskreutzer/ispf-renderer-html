@@ -39,7 +39,7 @@ export class HtmlRenderer {
             result += `${this.handleLine(line, validatedPanel.body.variables, resolveVariables)}<br>\n`;
         }
 
-        result += '<input type="submit" class="ispf-submit" value="Submit form" id="ispf-submit"/>\n'
+        result += '<input type="submit" class="ispf-button" value="Submit form" id="ispf-submit"/>\n'
         result += '</form>'; // Close div element opened first
         return result;
     }
