@@ -1,3 +1,9 @@
+#### 0.0.5 (2026-08-13)
+
+##### Tests
+
+* **selection element:**  Added test cases for selection element ([26ab65bc](https://github.com/juleskreutzer/ispf-renderer-html/commit/26ab65bc38440c9f6fad2d4c0ac3390a827eedc8))
+
 #### 0.0.4 (2026-08-10)
 
 ##### Chores
